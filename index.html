@@ -141,6 +141,134 @@
             line-height: 1.6;
         }
 
+        .chang-section {
+            padding: 6rem 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 50%, #b45309 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chang-section::before {
+            content: '🍺';
+            position: absolute;
+            font-size: 300px;
+            opacity: 0.05;
+            top: -50px;
+            right: -50px;
+            transform: rotate(-15deg);
+        }
+
+        .chang-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .chang-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .chang-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .chang-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .chang-story {
+            background: rgba(255,255,255,0.15);
+            padding: 2rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        .chang-story p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        .chang-story p:last-child {
+            margin-bottom: 0;
+        }
+
+        .chang-facts {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .fact {
+            background: rgba(255,255,255,0.2);
+            padding: 1.5rem;
+            border-radius: 15px;
+            min-width: 150px;
+            backdrop-filter: blur(10px);
+        }
+
+        .fact-number {
+            display: block;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        .fact-label {
+            font-size: 0.85rem;
+            opacity: 0.9;
+            line-height: 1.4;
+        }
+
+        .chang-toast {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            font-style: italic;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background: rgba(0,0,0,0.2);
+            border-radius: 50px;
+            display: inline-block;
+        }
+
+        @media (max-width: 768px) {
+            .chang-section h2 {
+                font-size: 2rem;
+            }
+            .chang-facts {
+                gap: 1rem;
+            }
+            .fact {
+                min-width: 120px;
+                padding: 1rem;
+            }
+            .fact-number {
+                font-size: 2rem;
+            }
+        }
+
         .friendship-section {
             padding: 6rem 2rem;
             text-align: center;
@@ -246,6 +374,37 @@
                     <p>When the jungle supply runs a little too good... phone on chest, eyes closed, contemplating the meaning of existence. 🍃😵‍💫</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="chang-section">
+        <div class="chang-content">
+            <div class="chang-icon">🍺</div>
+            <h2>The Chang Chronicles</h2>
+            <p class="chang-subtitle">A Legend Was Born in Khao Sok</p>
+            
+            <div class="chang-story">
+                <p>Let the record show: <strong>René doesn't drink Chang Beer. Chang Beer drinks René.</strong></p>
+                <p>In the humidity of Southern Thailand, where the air is 40% water and 60% mosquito, one man found his calling. While others panic-ordered Singha for the "premium" label, René walked straight to the 7-Eleven cooler with the confidence of a man who knows that <em>Chang Classic</em> hits different at 35 baht.</p>
+                <p>The first sip? Crisp. The second? Transcendent. The sixth? That's when René starts explaining his theory that "Chang" is actually Thai for "friendship."</p>
+            </div>
+            
+            <div class="chang-facts">
+                <div class="fact">
+                    <span class="fact-number">50m</span>
+                    <span class="fact-label">Can identify a Chang by the sound of the bottle cap hitting concrete</span>
+                </div>
+                <div class="fact">
+                    <span class="fact-number">0฿</span>
+                    <span class="fact-label">Full price paid for a six-pack (allegedly)</span>
+                </div>
+                <div class="fact">
+                    <span class="fact-number">∞</span>
+                    <span class="fact-label">Friendships forged over cold Changs</span>
+                </div>
+            </div>
+            
+            <p class="chang-toast">"To René. To Chang. To nights we'll half-remember but fully treasure."</p>
         </div>
     </section>
 
