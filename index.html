@@ -728,6 +728,174 @@
                 height: 300px;
             }
         }
+
+        .bob-section {
+            padding: 6rem 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bob-section::before {
+            content: '📱';
+            position: absolute;
+            font-size: 300px;
+            opacity: 0.05;
+            top: -50px;
+            left: -50px;
+            transform: rotate(-10deg);
+        }
+
+        .bob-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .bob-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            animation: phone-ring 2s ease-in-out infinite;
+        }
+
+        @keyframes phone-ring {
+            0%, 100% { transform: rotate(0deg); }
+            10% { transform: rotate(-10deg); }
+            20% { transform: rotate(10deg); }
+            30% { transform: rotate(-10deg); }
+            40% { transform: rotate(10deg); }
+            50% { transform: rotate(0deg); }
+        }
+
+        .bob-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            color: #c7d2fe;
+            text-shadow: 2px 2px 20px rgba(199, 210, 254, 0.3);
+        }
+
+        .bob-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            font-style: italic;
+            color: #a5b4fc;
+        }
+
+        .bob-story {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            margin-bottom: 3rem;
+            text-align: left;
+            border: 1px solid rgba(199, 210, 254, 0.3);
+        }
+
+        .bob-story p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .bob-story p:last-child {
+            margin-bottom: 0;
+        }
+
+        .bob-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .bob-shot {
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(199, 210, 254, 0.2);
+        }
+
+        .bob-shot:hover {
+            transform: translateY(-5px);
+        }
+
+        .bob-shot img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .bob-label {
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: white;
+            padding: 0.75rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .bob-shot p {
+            padding: 1rem;
+            font-size: 0.95rem;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        .bob-video-wrapper {
+            background: rgba(0,0,0,0.3);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(199, 210, 254, 0.2);
+        }
+
+        .bob-video-wrapper video {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+        }
+
+        .bob-status {
+            background: rgba(34, 197, 94, 0.2);
+            padding: 2rem;
+            border-radius: 20px;
+            border: 2px solid #22c55e;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background: #22c55e;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .status-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .bob-section h2 {
+                font-size: 2rem;
+            }
+            .bob-gallery {
+                grid-template-columns: 1fr;
+            }
+            .bob-shot img {
+                height: 300px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -989,6 +1157,46 @@
             <div class="night-swim-quote">
                 <p>"I don't always swim at night, but when I do, I make sure there's a cigarette involved and someone's filming it for evidence."</p>
                 <p class="quote-author">— Daan, probably</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bob-section">
+        <div class="bob-content">
+            <div class="bob-icon">📱</div>
+            <h2>Bob Checks In</h2>
+            <p class="bob-subtitle">Long-Distance Vibe Verification</p>
+            
+            <div class="bob-story">
+                <p>Not everyone could make it to Khao Sok, but that doesn't mean they weren't there in spirit. Enter <strong>Bob</strong> — calling in via FaceTime to conduct a thorough inspection of the situation.</p>
+                <p>The mission: verify that the vibes were, indeed, immaculate.</p>
+            </div>
+            
+            <div class="bob-gallery">
+                <div class="bob-shot">
+                    <img src="bob1.jpg" alt="The Check-In">
+                    <div class="bob-label">The Inspection</div>
+                    <p>"Show me the view. No, the other view. Now show me the drinks. Okay, carry on."</p>
+                </div>
+                
+                <div class="bob-shot">
+                    <img src="bob2.jpg" alt="The Approval">
+                    <div class="bob-label">The Approval</div>
+                    <p>Bob sees all. Bob approves. The vibes have been officially certified.</p>
+                </div>
+            </div>
+            
+            <div class="bob-video-wrapper">
+                <video controls poster="bob1.jpg">
+                    <source src="bob-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="video-caption">🎬 The Full Report — Bob's official vibe assessment</p>
+            </div>
+            
+            <div class="bob-status">
+                <div class="status-badge">✅ VIBES CONFIRMED</div>
+                <p class="status-text">Remote inspection complete. Bob gives Khao Sok two thumbs up and one cigarette emoji. 🚬</p>
             </div>
         </div>
     </section>
