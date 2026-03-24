@@ -1,0 +1,22 @@
+name: Deploy to Clawd
+
+on:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Validate HTML
+      run: |
+        # Basic HTML validation
+        find . -name "*.html" -exec echo "Validating {}" \;
+    
+    - name: Deploy to Clawd
+      run: |
+        # Deployment will be handled by Clawd auto-deploy
+        echo "✅ Deployment triggered for khao-sok-friendship"

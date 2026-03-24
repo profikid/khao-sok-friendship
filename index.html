@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laurens, Renee & Daan | Khao Sok Adventure</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('img1.jpg') center/cover;
+            opacity: 0.3;
+            filter: blur(2px);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 20px rgba(0,0,0,0.5);
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .location {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255,255,255,0.1);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            font-size: 0.9rem;
+        }
+
+        .scroll-hint {
+            position: absolute;
+            bottom: 2rem;
+            animation: bounce 2s infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(10px); }
+        }
+
+        .gallery {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .photo-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .photo-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .photo-caption {
+            padding: 1.5rem;
+        }
+
+        .photo-caption h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .photo-caption p {
+            opacity: 0.8;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .friendship-section {
+            padding: 6rem 2rem;
+            text-align: center;
+            background: linear-gradient(180deg, transparent 0%, rgba(15,52,96,0.5) 100%);
+        }
+
+        .friendship-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .friendship-section p {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            opacity: 0.9;
+            line-height: 1.8;
+        }
+
+        .names {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            padding: 1rem 2rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            opacity: 0.6;
+            font-size: 0.9rem;
+        }
+
+        .heart {
+            color: #e94560;
+        }
+
+        @media (max-width: 768px) {
+            .names {
+                gap: 1rem;
+            }
+            .name {
+                font-size: 1.2rem;
+                padding: 0.75rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Laurens, Renee & Daan</h1>
+            <p class="subtitle">Adventures in Paradise</p>
+            <div class="location">
+                <span>📍</span>
+                <span>Khao Sok National Park, Thailand</span>
+            </div>
+        </div>
+        <div class="scroll-hint">↓</div>
+    </section>
+
+    <section class="gallery">
+        <div class="gallery-grid">
+            <div class="photo-card">
+                <img src="img1.jpg" alt="Longtail boat adventure">
+                <div class="photo-caption">
+                    <h3>Captain of the Lake</h3>
+                    <p>Chilling on the bow of a traditional Thai longtail boat, surrounded by the iconic limestone karsts of Cheow Lan Lake.</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="img2.jpg" alt="Floating raft house selfie">
+                <div class="photo-caption">
+                    <h3>Floating Dreams</h3>
+                    <p>Selfie moments on the floating raft houses with those breathtaking mountain silhouettes in the background.</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="img3.jpg" alt="Sunset with friends">
+                <div class="photo-caption">
+                    <h3>Golden Hour Crew</h3>
+                    <p>Sunset vibes on the dock — peace signs up, worries down. That's what friendship trips are all about.</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="img4.jpg" alt="Post-sesh recovery mode">
+                <div class="photo-caption">
+                    <h3>Recovery Mode Activated</h3>
+                    <p>When the jungle supply runs a little too good... phone on chest, eyes closed, contemplating the meaning of existence. 🍃😵‍💫</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="friendship-section">
+        <h2>Some Trips Stay With You Forever</h2>
+        <p>Khao Sok wasn't just another destination — it was where limestone cliffs met emerald waters, where longtail boats cut through misty mornings, and where three friends made memories that'll last a lifetime.</p>
+        
+        <div class="names">
+            <div class="name">Laurens</div>
+            <div class="name">Renee</div>
+            <div class="name">Daan</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with <span class="heart">♥</span> for the Khao Sok crew · 2024</p>
+    </footer>
+</body>
+</html>
