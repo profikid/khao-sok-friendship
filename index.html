@@ -410,6 +410,162 @@
                 height: 250px;
             }
         }
+
+        .crab-section {
+            padding: 6rem 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, #2d1b4e 0%, #1a1a2e 50%, #0f3460 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .crab-section::before {
+            content: '🦀';
+            position: absolute;
+            font-size: 400px;
+            opacity: 0.03;
+            top: -100px;
+            right: -100px;
+            transform: rotate(15deg);
+        }
+
+        .crab-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .crab-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            animation: crab-walk 2s ease-in-out infinite;
+        }
+
+        @keyframes crab-walk {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+
+        .crab-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            color: #e94560;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .crab-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .crab-story {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            margin-bottom: 3rem;
+            text-align: left;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .crab-story p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .crab-story p:last-child {
+            margin-bottom: 0;
+        }
+
+        .crab-gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .crab-act {
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .crab-act:hover {
+            transform: translateY(-5px);
+        }
+
+        .crab-act img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .act-label {
+            background: #e94560;
+            color: white;
+            padding: 0.5rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .crab-act p {
+            padding: 1rem;
+            font-size: 0.9rem;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        .crab-video-wrapper {
+            background: rgba(0,0,0,0.3);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .crab-video-wrapper video {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .crab-moral {
+            background: rgba(233, 69, 96, 0.2);
+            padding: 2rem;
+            border-radius: 20px;
+            border: 2px solid #e94560;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .crab-moral p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .crab-section h2 {
+                font-size: 2rem;
+            }
+            .crab-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .crab-act img {
+                height: 150px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -574,6 +730,57 @@
                     <h3>Island Energy</h3>
                     <p>The vibe, the movement, the moment. This is what being in Thailand feels like — alive, free, and fully present.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="crab-section">
+        <div class="crab-content">
+            <div class="crab-icon">🦀</div>
+            <h2>The Hermit Crab Incident</h2>
+            <p class="crab-subtitle">A Cautionary Tale in Four Acts</p>
+            
+            <div class="crab-story">
+                <p>It was a peaceful evening in Khao Sok. Daan, in his infinite curiosity, spotted a large hermit crab and thought, <em>"I'll just pick it up for a quick photo."</em></p>
+                <p>What followed was a masterclass in "fuck around and find out."</p>
+            </div>
+            
+            <div class="crab-gallery">
+                <div class="crab-act">
+                    <img src="crab1.jpg" alt="Act 1: The Confident Beginning">
+                    <div class="act-label">Act I: The Confidence</div>
+                    <p>"Look at this little guy! So cute! This will make a great photo!"</p>
+                </div>
+                
+                <div class="crab-act">
+                    <img src="crab2.jpg" alt="Act 2: The Realization">
+                    <div class="act-label">Act II: The Pinch</div>
+                    <p>The moment of regret. The crab's claw says: "I didn't ask to be picked up."</p>
+                </div>
+                
+                <div class="crab-act">
+                    <img src="crab3.jpg" alt="Act 3: The Aftermath">
+                    <div class="act-label">Act III: The Examination</div>
+                    <p>Checking the damage. Singha beer standing by for emergency consolation.</p>
+                </div>
+                
+                <div class="crab-act">
+                    <img src="crab4.jpg" alt="Act 4: The Evidence">
+                    <div class="act-label">Act IV: The Evidence</div>
+                    <p>Close-up proof that hermit crabs have excellent grip strength.</p>
+                </div>
+            </div>
+            
+            <div class="crab-video-wrapper">
+                <video controls poster="crab1.jpg">
+                    <source src="crab-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="video-caption">🎬 The Full Saga — Watch the drama unfold in real-time</p>
+            </div>
+            
+            <div class="crab-moral">
+                <p><strong>The Moral:</strong> Hermit crabs may look cute, but they have powerful pincers and aren't afraid to use them. Respect the wildlife, or become a cautionary tale. 🦀⚠️</p>
             </div>
         </div>
     </section>
