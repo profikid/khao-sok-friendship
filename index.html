@@ -337,6 +337,79 @@
                 padding: 0.75rem 1.5rem;
             }
         }
+
+        .videos-section {
+            padding: 6rem 2rem;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(15,52,96,0.5) 0%, #1a1a2e 100%);
+        }
+
+        .videos-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .videos-subtitle {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            margin-bottom: 3rem;
+        }
+
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .video-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .video-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .video-card video {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            background: #000;
+        }
+
+        .video-caption {
+            padding: 1.5rem;
+        }
+
+        .video-caption h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .video-caption p {
+            opacity: 0.8;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .videos-grid {
+                grid-template-columns: 1fr;
+            }
+            .video-card video {
+                height: 250px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -423,6 +496,83 @@
                 <div class="photo-caption">
                     <h3>Lake Legends</h3>
                     <p>Selfie game strong at Cheow Lan Lake. Thumbs up, orange shades, and that golden hour glow. This is the energy we brought to Khao Sok. 🤙</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="img10.jpg" alt="Accommodation hangout">
+                <div class="photo-caption">
+                    <h3>Home Base</h3>
+                    <p>Chilling at the accommodation — Boss polo, laptop time, and the organized chaos of travel life. This is where the day's stories get processed.</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="img11.jpg" alt="Room vibes">
+                <div class="photo-caption">
+                    <h3>Room Service</h3>
+                    <p>Desk life in paradise — cards, snacks, and that post-beach sunburn. The simple moments between adventures.</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="img12.jpg" alt="Evening dining">
+                <div class="photo-caption">
+                    <h3>Dinner & Conversations</h3>
+                    <p>Another evening, another thatched roof, another round of stories. The smartwatch says it's time to relax.</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="img13.jpg" alt="Beach paradise">
+                <div class="photo-caption">
+                    <h3>Phi Phi Dreams</h3>
+                    <p>That iconic turquoise water, limestone karsts, and pure beach bliss. This is the Thailand you see on postcards — and we lived it. 🏝️</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="img14.jpg" alt="Coconut drinks">
+                <div class="photo-caption">
+                    <h3>Tropical Refreshments</h3>
+                    <p>Fresh coconuts with orchid garnishes, steamed cockles, and a sunset view. This is how you do Thailand right. 🥥🌺</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="img15.jpg" alt="Bunny ears selfie">
+                <div class="photo-caption">
+                    <h3>Friendship Goals</h3>
+                    <p>Bunny ears, blurry vibes, and that pure joy of being together. Some friendships never grow up — and that's the best part. 🐰</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="videos-section">
+        <h2>🎬 The Motion Picture</h2>
+        <p class="videos-subtitle">Because some moments need to be seen in action</p>
+        
+        <div class="videos-grid">
+            <div class="video-card">
+                <video controls poster="img10.jpg">
+                    <source src="video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-caption">
+                    <h3>The Bottle Inspection</h3>
+                    <p>Two men, one mysterious bottle, and the curiosity that defines every good adventure. "What is this? Should we try it?"</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <video controls poster="img13.jpg">
+                    <source src="video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-caption">
+                    <h3>Island Energy</h3>
+                    <p>The vibe, the movement, the moment. This is what being in Thailand feels like — alive, free, and fully present.</p>
                 </div>
             </div>
         </div>
