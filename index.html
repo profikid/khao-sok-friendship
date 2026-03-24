@@ -98,9 +98,20 @@
             gap: 2rem;
         }
 
+        .gallery-grid .photo-card:nth-child(5) {
+            grid-column: 1 / -1;
+        }
+
+        .gallery-grid .photo-card:nth-child(5) img {
+            height: 500px;
+        }
+
         @media (max-width: 768px) {
             .gallery-grid {
                 grid-template-columns: 1fr;
+            }
+            .gallery-grid .photo-card:nth-child(5) img {
+                height: 350px;
             }
         }
 
@@ -372,6 +383,46 @@
                 <div class="photo-caption">
                     <h3>Recovery Mode Activated</h3>
                     <p>When the jungle supply runs a little too good... phone on chest, eyes closed, contemplating the meaning of existence. 🍃😵‍💫</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="img5.jpg" alt="Sunset video call from the beach">
+                <div class="photo-caption">
+                    <h3>Love Across the Distance</h3>
+                    <p>Sharing a magical beach sunset over FaceTime — because the best moments are the ones you share, even from halfway across the world. 🌅❤️</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="img6.jpg" alt="Evening at the restaurant">
+                <div class="photo-caption">
+                    <h3>Night Market Vibes</h3>
+                    <p>Hugo Boss polo, tropical shorts, thatched roof, string lights — this is what Khao Sok evenings are made of. Pure relaxation mode.</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="img7.jpg" alt="Rest stop hydration">
+                <div class="photo-caption">
+                    <h3>Hydration Station</h3>
+                    <p>Post-adventure cooldown at a roadside stop. Under Armour shirt, Skechers slides, and the universal language of "I need water right now." 💧</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="img8.jpg" alt="Dramatic mountain sunset">
+                <div class="photo-caption">
+                    <h3>Sky on Fire</h3>
+                    <p>When the Khao Sok sky decides to put on a show — dramatic clouds, golden light, and what might be lightning on the horizon. Nature flexing hard. ⚡</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="img9.jpg" alt="Selfie at Cheow Lan Lake">
+                <div class="photo-caption">
+                    <h3>Lake Legends</h3>
+                    <p>Selfie game strong at Cheow Lan Lake. Thumbs up, orange shades, and that golden hour glow. This is the energy we brought to Khao Sok. 🤙</p>
                 </div>
             </div>
         </div>
