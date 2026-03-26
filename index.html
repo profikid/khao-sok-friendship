@@ -152,6 +152,151 @@
             line-height: 1.6;
         }
 
+        .memory-beach-section {
+            padding: 6rem 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 50%, #10b981 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .memory-beach-section::before {
+            content: '🌊';
+            position: absolute;
+            font-size: 400px;
+            opacity: 0.05;
+            bottom: -150px;
+            right: -100px;
+            transform: rotate(-15deg);
+        }
+
+        .memory-beach-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .memory-beach-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            animation: wave-float 3s ease-in-out infinite;
+        }
+
+        @keyframes wave-float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(5deg); }
+        }
+
+        .memory-beach-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+            text-shadow: 2px 2px 20px rgba(0,0,0,0.3);
+        }
+
+        .memory-beach-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .memory-beach-story {
+            background: rgba(255,255,255,0.15);
+            padding: 2rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            margin-bottom: 3rem;
+            text-align: left;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .memory-beach-story p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .memory-beach-story p:last-child {
+            margin-bottom: 0;
+        }
+
+        .memory-beach-gallery {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3rem;
+        }
+
+        .memory-beach-shot {
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.2);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .memory-beach-shot:hover {
+            transform: translateY(-10px);
+        }
+
+        .memory-beach-shot img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .beach-label {
+            background: linear-gradient(135deg, #0ea5e9, #06b6d4);
+            color: white;
+            padding: 0.75rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .memory-beach-shot p {
+            padding: 1rem;
+            font-size: 0.95rem;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        .memory-beach-quote {
+            background: rgba(255,255,255,0.15);
+            padding: 2rem;
+            border-radius: 20px;
+            border-left: 4px solid #fff;
+            text-align: left;
+            font-style: italic;
+            backdrop-filter: blur(10px);
+        }
+
+        .memory-beach-quote p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .memory-beach-quote .quote-author {
+            text-align: right;
+            opacity: 0.8;
+            font-size: 1rem !important;
+            margin-bottom: 0 !important;
+        }
+
+        @media (max-width: 768px) {
+            .memory-beach-section h2 {
+                font-size: 2rem;
+            }
+            .memory-beach-shot img {
+                height: 300px;
+            }
+        }
+
         .chang-section {
             padding: 6rem 2rem;
             text-align: center;
@@ -1197,6 +1342,32 @@
             <div class="bob-status">
                 <div class="status-badge">✅ VIBES CONFIRMED</div>
                 <p class="status-text">Remote inspection complete. Bob gives Khao Sok two thumbs up and one cigarette emoji. 🚬</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="memory-beach-section">
+        <div class="memory-beach-content">
+            <div class="memory-beach-icon">🏖️</div>
+            <h2>Memory Beach</h2>
+            <p class="memory-beach-subtitle">Where the Sand Holds the Stories</p>
+            
+            <div class="memory-beach-story">
+                <p>Some beaches are just beaches. Others become part of you. <strong>Memory Beach</strong> is where the Khao Sok crew left their footprints — literally and figuratively.</p>
+                <p>Golden sand, turquoise waters, limestone karsts rising like ancient guardians. This is where conversations flowed as freely as the tides, where sunburns were earned and friendships deepened with every crashing wave.</p>
+            </div>
+            
+            <div class="memory-beach-gallery">
+                <div class="memory-beach-shot">
+                    <img src="memory-beach.jpg" alt="Memory Beach">
+                    <div class="beach-label">The Spot</div>
+                    <p>Paradise found. Shoes optional, good vibes mandatory.</p>
+                </div>
+            </div>
+            
+            <div class="memory-beach-quote">
+                <p>"We didn't just visit this beach — we became part of its memory, and it became part of ours."</p>
+                <p class="quote-author">— The Khao Sok Philosophy</p>
             </div>
         </div>
     </section>
