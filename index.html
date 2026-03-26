@@ -224,8 +224,9 @@
         }
 
         .memory-beach-gallery {
-            display: flex;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
             margin-bottom: 3rem;
         }
 
@@ -235,8 +236,14 @@
             overflow: hidden;
             transition: transform 0.3s ease;
             border: 1px solid rgba(255,255,255,0.2);
-            max-width: 600px;
-            width: 100%;
+        }
+
+        .memory-beach-shot:nth-child(1) {
+            grid-column: 1 / -1;
+        }
+
+        .memory-beach-shot:nth-child(1) img {
+            height: 450px;
         }
 
         .memory-beach-shot:hover {
@@ -245,7 +252,7 @@
 
         .memory-beach-shot img {
             width: 100%;
-            height: 400px;
+            height: 280px;
             object-fit: cover;
             display: block;
         }
@@ -292,8 +299,14 @@
             .memory-beach-section h2 {
                 font-size: 2rem;
             }
-            .memory-beach-shot img {
+            .memory-beach-gallery {
+                grid-template-columns: 1fr;
+            }
+            .memory-beach-shot:nth-child(1) img {
                 height: 300px;
+            }
+            .memory-beach-shot img {
+                height: 250px;
             }
         }
 
@@ -1362,6 +1375,36 @@
                     <img src="memory-beach.jpg" alt="Memories Beach Bar at Pakarang Beach">
                     <div class="beach-label">The Spot</div>
                     <p>Paradise found at Memories Beach Bar. Shoes optional, good vibes mandatory.</p>
+                </div>
+                
+                <div class="memory-beach-shot">
+                    <img src="memory-beach-1.jpg" alt="Memories Beach Bar view">
+                    <div class="beach-label">The View</div>
+                    <p>Where the horizon meets the soul.</p>
+                </div>
+                
+                <div class="memory-beach-shot">
+                    <img src="memory-beach-2.jpg" alt="Beach vibes">
+                    <div class="beach-label">The Vibe</div>
+                    <p>Salt in the air, sand in your hair.</p>
+                </div>
+                
+                <div class="memory-beach-shot">
+                    <img src="memory-beach-3.jpg" alt="Pakarang Beach scenery">
+                    <div class="beach-label">The Scenery</div>
+                    <p>Postcard views, real life moments.</p>
+                </div>
+                
+                <div class="memory-beach-shot">
+                    <img src="memory-beach-4.jpg" alt="Beach bar atmosphere">
+                    <div class="beach-label">The Atmosphere</div>
+                    <p>Drinks cold, hearts warm.</p>
+                </div>
+                
+                <div class="memory-beach-shot">
+                    <img src="memory-beach-5.jpg" alt="Pakarang Beach sunset">
+                    <div class="beach-label">The Golden Hour</div>
+                    <p>When the sun paints everything gold.</p>
                 </div>
             </div>
             
