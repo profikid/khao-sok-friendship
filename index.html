@@ -295,6 +295,27 @@
             margin-bottom: 0 !important;
         }
 
+        .memory-beach-video-wrapper {
+            background: rgba(0,0,0,0.3);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .memory-beach-video-wrapper video {
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+        }
+
+        .memory-beach-video-wrapper .video-caption {
+            margin-top: 1rem;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
         @media (max-width: 768px) {
             .memory-beach-section h2 {
                 font-size: 2rem;
@@ -1408,6 +1429,14 @@
                 </div>
             </div>
             
+            <div class="memory-beach-video-wrapper">
+                <video controls poster="memory-beach-2.jpg">
+                    <source src="memory-beach-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="video-caption">🎬 Lounger Life — First-person perspective from paradise</p>
+            </div>
+
             <div class="memory-beach-quote">
                 <p>"We didn't just visit this beach — we became part of its memory, and it became part of ours."</p>
                 <p class="quote-author">— The Khao Sok Philosophy</p>
