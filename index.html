@@ -452,6 +452,27 @@
             line-height: 1.5;
         }
 
+        .gratje-video-wrapper {
+            background: rgba(0,0,0,0.3);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .gratje-video-wrapper video {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+        }
+
+        .gratje-video-wrapper .video-caption {
+            margin-top: 1rem;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
         .gratje-quote {
             background: rgba(255,255,255,0.15);
             padding: 2rem;
@@ -1650,6 +1671,14 @@
                 </div>
             </div>
             
+            <div class="gratje-video-wrapper">
+                <video controls poster="gratje1.jpg">
+                    <source src="gratje-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="video-caption">🎬 The Bond — Petting session turns into celebration</p>
+            </div>
+
             <div class="gratje-quote">
                 <p>"Gratje didn't care about our plans, our schedules, or our tourist status. She just cared about the moment — and maybe the snacks on the table."</p>
                 <p class="quote-author">— Beach House Philosophy</p>
