@@ -13,28 +13,37 @@
         }
 
         .seal-toggle {
-            position: fixed;
+            position: fixed !important;
             top: 1.25rem;
             right: 1.25rem;
-            z-index: 1000;
-            display: inline-flex;
+            z-index: 9999 !important;
+            display: inline-flex !important;
             align-items: center;
             gap: 0.65rem;
             padding: 0.85rem 1rem;
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 2px solid rgba(125, 211, 252, 0.4);
             border-radius: 999px;
-            background: rgba(8, 15, 33, 0.72);
+            background: rgba(8, 15, 33, 0.85);
             color: #fff;
             backdrop-filter: blur(14px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.28);
+            -webkit-backdrop-filter: blur(14px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.35), 0 0 20px rgba(125, 211, 252, 0.15);
             cursor: pointer;
-            transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+            visibility: visible !important;
+            opacity: 1 !important;
         }
 
         .seal-toggle:hover {
-            transform: translateY(-2px) scale(1.01);
-            background: rgba(14, 27, 58, 0.9);
-            border-color: rgba(125, 211, 252, 0.5);
+            transform: translateY(-3px) scale(1.02);
+            background: rgba(14, 27, 58, 0.95);
+            border-color: rgba(125, 211, 252, 0.7);
+            box-shadow: 0 14px 35px rgba(0,0,0,0.4), 0 0 30px rgba(125, 211, 252, 0.25);
+        }
+
+        .seal-toggle:active {
+            transform: translateY(-1px) scale(0.98);
         }
 
         .seal-toggle:focus-visible {
@@ -45,12 +54,32 @@
         .seal-toggle-icon {
             display: inline-grid;
             place-items: center;
-            width: 2rem;
-            height: 2rem;
+            width: 2.2rem;
+            height: 2.2rem;
             border-radius: 999px;
             background: linear-gradient(135deg, #7dd3fc, #38bdf8);
-            font-size: 1.1rem;
-            box-shadow: inset 0 1px 0 rgba(255,255,255,0.35);
+            font-size: 1.2rem;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.35), 0 2px 8px rgba(56, 189, 248, 0.3);
+            animation: seal-bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes seal-bounce {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            25% { transform: translateY(-3px) rotate(-5deg); }
+            50% { transform: translateY(0) rotate(0deg); }
+            75% { transform: translateY(-2px) rotate(5deg); }
+        }
+
+        .seal-toggle:hover .seal-toggle-icon {
+            animation: seal-wiggle 0.5s ease-in-out;
+        }
+
+        @keyframes seal-wiggle {
+            0%, 100% { transform: rotate(0deg); }
+            20% { transform: rotate(-15deg); }
+            40% { transform: rotate(15deg); }
+            60% { transform: rotate(-10deg); }
+            80% { transform: rotate(10deg); }
         }
 
         .seal-toggle-label {
@@ -62,6 +91,7 @@
 
         .seal-toggle-label strong {
             font-size: 0.92rem;
+            font-weight: 600;
         }
 
         .seal-toggle-label span {
@@ -70,12 +100,24 @@
         }
 
         .seal-toggle.is-active {
-            background: rgba(8, 47, 73, 0.92);
-            border-color: rgba(125, 211, 252, 0.55);
+            background: rgba(8, 47, 73, 0.95);
+            border-color: rgba(125, 211, 252, 0.8);
+            box-shadow: 0 14px 35px rgba(56, 189, 248, 0.25), 0 0 40px rgba(125, 211, 252, 0.2);
+        }
+
+        .seal-toggle.is-active .seal-toggle-icon {
+            animation: seal-spin 1s ease-in-out;
+            background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+        }
+
+        @keyframes seal-spin {
+            0% { transform: rotate(0deg) scale(1); }
+            50% { transform: rotate(180deg) scale(1.2); }
+            100% { transform: rotate(360deg) scale(1); }
         }
 
         .seal-mode .seal-toggle {
-            box-shadow: 0 14px 32px rgba(56, 189, 248, 0.18), 0 10px 30px rgba(0,0,0,0.28);
+            box-shadow: 0 14px 35px rgba(56, 189, 248, 0.25), 0 0 30px rgba(125, 211, 252, 0.15);
         }
 
         .seal-mode img,
@@ -101,9 +143,20 @@
 
         @media (max-width: 768px) {
             .seal-toggle {
-                top: 0.9rem;
-                right: 0.9rem;
-                padding: 0.75rem 0.85rem;
+                top: 0.75rem;
+                right: 0.75rem;
+                padding: 0.7rem 0.85rem;
+                gap: 0.5rem;
+            }
+
+            .seal-toggle-icon {
+                width: 2rem;
+                height: 2rem;
+                font-size: 1.1rem;
+            }
+
+            .seal-toggle-label strong {
+                font-size: 0.85rem;
             }
 
             .seal-toggle-label span {
