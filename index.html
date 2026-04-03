@@ -6,6 +6,117 @@
     <title>Laurens, Renee & Daan | Khao Sok Adventure</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
+
+
+        :root {
+            --hero-bg: url('img1.jpg');
+        }
+
+        .seal-toggle {
+            position: fixed;
+            top: 1.25rem;
+            right: 1.25rem;
+            z-index: 1000;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.65rem;
+            padding: 0.85rem 1rem;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 999px;
+            background: rgba(8, 15, 33, 0.72);
+            color: #fff;
+            backdrop-filter: blur(14px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.28);
+            cursor: pointer;
+            transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+        }
+
+        .seal-toggle:hover {
+            transform: translateY(-2px) scale(1.01);
+            background: rgba(14, 27, 58, 0.9);
+            border-color: rgba(125, 211, 252, 0.5);
+        }
+
+        .seal-toggle:focus-visible {
+            outline: 2px solid #7dd3fc;
+            outline-offset: 3px;
+        }
+
+        .seal-toggle-icon {
+            display: inline-grid;
+            place-items: center;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 999px;
+            background: linear-gradient(135deg, #7dd3fc, #38bdf8);
+            font-size: 1.1rem;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.35);
+        }
+
+        .seal-toggle-label {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            line-height: 1.1;
+        }
+
+        .seal-toggle-label strong {
+            font-size: 0.92rem;
+        }
+
+        .seal-toggle-label span {
+            font-size: 0.72rem;
+            opacity: 0.75;
+        }
+
+        .seal-toggle.is-active {
+            background: rgba(8, 47, 73, 0.92);
+            border-color: rgba(125, 211, 252, 0.55);
+        }
+
+        .seal-mode .seal-toggle {
+            box-shadow: 0 14px 32px rgba(56, 189, 248, 0.18), 0 10px 30px rgba(0,0,0,0.28);
+        }
+
+        .seal-mode img,
+        .seal-mode video {
+            transition: filter 0.35s ease, transform 0.35s ease;
+        }
+
+        .seal-mode .hero::after {
+            content: '🦭 seal mode engaged';
+            position: absolute;
+            top: 6rem;
+            right: 1.5rem;
+            z-index: 1;
+            padding: 0.55rem 0.8rem;
+            border-radius: 999px;
+            font-size: 0.82rem;
+            letter-spacing: 0.02em;
+            background: rgba(8, 47, 73, 0.75);
+            border: 1px solid rgba(125, 211, 252, 0.35);
+            backdrop-filter: blur(10px);
+            color: #e0f2fe;
+        }
+
+        @media (max-width: 768px) {
+            .seal-toggle {
+                top: 0.9rem;
+                right: 0.9rem;
+                padding: 0.75rem 0.85rem;
+            }
+
+            .seal-toggle-label span {
+                display: none;
+            }
+
+            .seal-mode .hero::after {
+                top: 5rem;
+                right: 1rem;
+                font-size: 0.74rem;
+            }
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -38,7 +149,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('img1.jpg') center/cover;
+            background: var(--hero-bg) center/cover;
             opacity: 0.3;
             filter: blur(2px);
         }
@@ -1256,6 +1367,14 @@
     </style>
 </head>
 <body>
+
+    <button class="seal-toggle" id="sealToggle" type="button" aria-pressed="false" aria-label="Toggle seal mode">
+        <span class="seal-toggle-icon" aria-hidden="true">🦭</span>
+        <span class="seal-toggle-label">
+            <strong>Seal mode</strong>
+            <span>replace every photo with a sealified version</span>
+        </span>
+    </button>
     <section class="hero">
         <div class="hero-content">
             <h1>Laurens, Renee & Daan</h1>
@@ -1731,5 +1850,59 @@
     <footer>
         <p>Made with <span class="heart">♥</span> for the Khao Sok crew · 2024</p>
     </footer>
+
+    <script>
+        (() => {
+            const STORAGE_KEY = 'khao-sok-seal-mode';
+            const body = document.body;
+            const toggle = document.getElementById('sealToggle');
+            const imageNodes = [...document.querySelectorAll('img')];
+            const posterNodes = [...document.querySelectorAll('video[poster]')];
+
+            const toSealSrc = (src) => {
+                if (!src || src.startsWith('sealified/')) return src;
+                const clean = src.split('?')[0];
+                const bits = clean.split('/');
+                const filename = bits[bits.length - 1].replace(/\.[^.]+$/, '.png');
+                return `sealified/${filename}`;
+            };
+
+            imageNodes.forEach((img) => {
+                img.dataset.originalSrc = img.getAttribute('src');
+                img.dataset.sealSrc = toSealSrc(img.dataset.originalSrc);
+            });
+
+            posterNodes.forEach((video) => {
+                video.dataset.originalPoster = video.getAttribute('poster');
+                video.dataset.sealPoster = toSealSrc(video.dataset.originalPoster);
+            });
+
+            const applyMode = (sealMode) => {
+                body.classList.toggle('seal-mode', sealMode);
+                document.documentElement.style.setProperty('--hero-bg', `url('${sealMode ? 'sealified/img1.png' : 'img1.jpg'}')`);
+
+                imageNodes.forEach((img) => {
+                    img.setAttribute('src', sealMode ? img.dataset.sealSrc : img.dataset.originalSrc);
+                });
+
+                posterNodes.forEach((video) => {
+                    video.setAttribute('poster', sealMode ? video.dataset.sealPoster : video.dataset.originalPoster);
+                    video.load();
+                });
+
+                toggle.classList.toggle('is-active', sealMode);
+                toggle.setAttribute('aria-pressed', String(sealMode));
+            };
+
+            const initial = localStorage.getItem(STORAGE_KEY) === 'true';
+            applyMode(initial);
+
+            toggle.addEventListener('click', () => {
+                const next = !body.classList.contains('seal-mode');
+                localStorage.setItem(STORAGE_KEY, String(next));
+                applyMode(next);
+            });
+        })();
+    </script>
 </body>
 </html>

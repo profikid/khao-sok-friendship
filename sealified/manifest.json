@@ -1,0 +1,229 @@
+{
+  "images": [
+    {
+      "src": "img1.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality, seal captain on a longtail boat",
+      "alt": "Longtail boat adventure",
+      "section": "",
+      "context": "Captain of the Lake | Chilling on the bow of a traditional Thai longtail boat, surrounded by the iconic limestone karsts of Cheow Lan Lake. | Longtail boat adventure",
+      "output": "sealified/img1.png"
+    },
+    {
+      "src": "img2.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality",
+      "alt": "Floating raft house selfie",
+      "section": "",
+      "context": "Floating Dreams | Selfie moments on the floating raft houses with those breathtaking mountain silhouettes in the background. | Floating raft house selfie",
+      "output": "sealified/img2.png"
+    },
+    {
+      "src": "img3.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality",
+      "alt": "Sunset with friends",
+      "section": "",
+      "context": "Golden Hour Crew | Sunset vibes on the dock \u2014 peace signs up, worries down. That's what friendship trips are all about. | Sunset with friends",
+      "output": "sealified/img3.png"
+    },
+    {
+      "src": "img4.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality, seal on a video call",
+      "alt": "Post-sesh recovery mode",
+      "section": "",
+      "context": "Recovery Mode Activated | When the jungle supply runs a little too good... phone on chest, eyes closed, contemplating the meaning of existence. \ud83c\udf43\ud83d\ude35\u200d\ud83d\udcab | Post-sesh recovery mode",
+      "output": "sealified/img4.png"
+    },
+    {
+      "src": "img5.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality, seal relaxing on tropical beach",
+      "alt": "Sunset video call from the beach",
+      "section": "",
+      "context": "Love Across the Distance | Sharing a magical beach sunset over FaceTime \u2014 because the best moments are the ones you share, even from halfway across the world. \ud83c\udf05\u2764\ufe0f | Sunset video call from the beach",
+      "output": "sealified/img5.png"
+    },
+    {
+      "src": "img6.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality, seal swimming at night under moonlight",
+      "alt": "Evening at the restaurant",
+      "section": "",
+      "context": "Night Market Vibes | Hugo Boss polo, tropical shorts, thatched roof, string lights \u2014 this is what Khao Sok evenings are made of. Pure relaxation mode. | Evening at the restaurant",
+      "output": "sealified/img6.png"
+    },
+    {
+      "src": "img7.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality",
+      "alt": "Rest stop hydration",
+      "section": "",
+      "context": "Hydration Station | Post-adventure cooldown at a roadside stop. Under Armour shirt, Skechers slides, and the universal language of \"I need water right now.\" \ud83d\udca7 | Rest stop hydration",
+      "output": "sealified/img7.png"
+    },
+    {
+      "src": "img9.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality",
+      "alt": "Selfie at Cheow Lan Lake",
+      "section": "",
+      "context": "Lake Legends | Selfie game strong at Cheow Lan Lake. Thumbs up, orange shades, and that golden hour glow. This is the energy we brought to Khao Sok. \ud83e\udd19 | Selfie at Cheow Lan Lake",
+      "output": "sealified/img9.png"
+    },
+    {
+      "src": "img10.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality",
+      "alt": "Accommodation hangout",
+      "section": "",
+      "context": "Home Base | Chilling at the accommodation \u2014 Boss polo, laptop time, and the organized chaos of travel life. This is where the day's stories get processed. | Accommodation hangout",
+      "output": "sealified/img10.png"
+    },
+    {
+      "src": "img11.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality, seal relaxing on tropical beach",
+      "alt": "Room vibes",
+      "section": "",
+      "context": "Room Service | Desk life in paradise \u2014 cards, snacks, and that post-beach sunburn. The simple moments between adventures. | Room vibes",
+      "output": "sealified/img11.png"
+    },
+    {
+      "src": "img12.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality",
+      "alt": "Evening dining",
+      "section": "",
+      "context": "Dinner & Conversations | Another evening, another thatched roof, another round of stories. The smartwatch says it's time to relax. | Evening dining",
+      "output": "sealified/img12.png"
+    },
+    {
+      "src": "img13.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality, seal relaxing on tropical beach",
+      "alt": "Beach paradise",
+      "section": "",
+      "context": "Phi Phi Dreams | That iconic turquoise water, limestone karsts, and pure beach bliss. This is the Thailand you see on postcards \u2014 and we lived it. \ud83c\udfdd\ufe0f | Beach paradise",
+      "output": "sealified/img13.png"
+    },
+    {
+      "src": "img15.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality",
+      "alt": "Bunny ears selfie",
+      "section": "",
+      "context": "Friendship Goals | Bunny ears, blurry vibes, and that pure joy of being together. Some friendships never grow up \u2014 and that's the best part. \ud83d\udc30 | Bunny ears selfie",
+      "output": "sealified/img15.png"
+    },
+    {
+      "src": "crab1.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality, seal interacting with a hermit crab",
+      "alt": "Act 1: The Confident Beginning",
+      "section": "The Hermit Crab Incident",
+      "context": "The Hermit Crab Incident | Act I: The Confidence | \"Look at this little guy! So cute! This will make a great photo!\" | Act 1: The Confident Beginning",
+      "output": "sealified/crab1.png"
+    },
+    {
+      "src": "crab2.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality, seal interacting with a hermit crab",
+      "alt": "Act 2: The Realization",
+      "section": "The Hermit Crab Incident",
+      "context": "The Hermit Crab Incident | Act II: The Pinch | The moment of regret. The crab's claw says: \"I didn't ask to be picked up.\" | Act 2: The Realization",
+      "output": "sealified/crab2.png"
+    },
+    {
+      "src": "crab3.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality, seal interacting with a hermit crab",
+      "alt": "Act 3: The Aftermath",
+      "section": "The Hermit Crab Incident",
+      "context": "The Hermit Crab Incident | Act III: The Examination | Checking the damage. Singha beer standing by for emergency consolation. | Act 3: The Aftermath",
+      "output": "sealified/crab3.png"
+    },
+    {
+      "src": "crab4.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality, seal interacting with a hermit crab",
+      "alt": "Act 4: The Evidence",
+      "section": "The Hermit Crab Incident",
+      "context": "The Hermit Crab Incident | Act IV: The Evidence | Close-up proof that hermit crabs have excellent grip strength. | Act 4: The Evidence",
+      "output": "sealified/crab4.png"
+    },
+    {
+      "src": "night1.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality, seal swimming at night under moonlight",
+      "alt": "Entering the water",
+      "section": "The Night Swim",
+      "context": "The Night Swim | The Entry | \"The water's fine... probably.\" | Entering the water",
+      "output": "sealified/night1.png"
+    },
+    {
+      "src": "night2.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality, seal swimming at night under moonlight",
+      "alt": "Posing in the water",
+      "section": "The Night Swim",
+      "context": "The Night Swim | The Pose | When you remember you brought a cigarette but forgot to bring sense. | Posing in the water",
+      "output": "sealified/night2.png"
+    },
+    {
+      "src": "night3.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality, seal swimming at night under moonlight",
+      "alt": "Walking through water",
+      "section": "The Night Swim",
+      "context": "The Night Swim | The Exit | Beer still in hand. Dignity... debatable. | Walking through water",
+      "output": "sealified/night3.png"
+    },
+    {
+      "src": "bob1.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality, seal on a video call",
+      "alt": "The Check-In",
+      "section": "Bob Checks In",
+      "context": "Bob Checks In | The Inspection | \"Show me the view. No, the other view. Now show me the drinks. Okay, carry on.\" | The Check-In",
+      "output": "sealified/bob1.png"
+    },
+    {
+      "src": "bob2.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality, seal on a video call",
+      "alt": "The Approval",
+      "section": "Bob Checks In",
+      "context": "Bob Checks In | The Approval | Bob sees all. Bob approves. The vibes have been officially certified. | The Approval",
+      "output": "sealified/bob2.png"
+    },
+    {
+      "src": "memory-beach.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality, seal relaxing on tropical beach",
+      "alt": "Memories Beach Bar at Pakarang Beach",
+      "section": "Memories Beach Bar",
+      "context": "Memories Beach Bar | The Spot | Paradise found at Memories Beach Bar. Shoes optional, good vibes mandatory. | Memories Beach Bar at Pakarang Beach",
+      "output": "sealified/memory-beach.png"
+    },
+    {
+      "src": "memory-beach-3.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality, seal relaxing on tropical beach",
+      "alt": "Pakarang Beach scenery",
+      "section": "Memories Beach Bar",
+      "context": "Memories Beach Bar | The Scenery | Postcard views, real life moments. | Pakarang Beach scenery",
+      "output": "sealified/memory-beach-3.png"
+    },
+    {
+      "src": "gratje1.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality, seal relaxing on tropical beach",
+      "alt": "Daan petting Gratje",
+      "section": "Gratje \u2014 The Beach House Legend",
+      "context": "Gratje \u2014 The Beach House Legend | The Introduction | \"Who's a good girl with funny teeth? You are!\" | Daan petting Gratje",
+      "output": "sealified/gratje1.png"
+    },
+    {
+      "src": "gratje2.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality, seal relaxing on tropical beach",
+      "alt": "Gratje's smile",
+      "section": "Gratje \u2014 The Beach House Legend",
+      "context": "Gratje \u2014 The Beach House Legend | The Grin | That underbite. Those teeth. Pure charm. | Gratje's smile",
+      "output": "sealified/gratje2.png"
+    },
+    {
+      "src": "gratje3.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality, seal relaxing on tropical beach",
+      "alt": "Best friends",
+      "section": "Gratje \u2014 The Beach House Legend",
+      "context": "Gratje \u2014 The Beach House Legend | The Bond | Sometimes you meet someone and just click. | Best friends",
+      "output": "sealified/gratje3.png"
+    },
+    {
+      "src": "gratje4.jpg",
+      "prompt": "a mystical seal oracle portrait, ancient hyper-intelligent seal creature with glowing eyes, ethereal underwater lighting, bioluminescent coral reef background, magical atmosphere, digital art style, highly detailed, 8k quality, seal relaxing on tropical beach",
+      "alt": "Gratje up close",
+      "section": "Gratje \u2014 The Beach House Legend",
+      "context": "Gratje \u2014 The Beach House Legend | The Close-Up | Model material. Those teeth deserve their own agent. | Gratje up close",
+      "output": "sealified/gratje4.png"
+    }
+  ],
+  "total": 28
+}
